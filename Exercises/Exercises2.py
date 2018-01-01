@@ -544,13 +544,14 @@ Solution:
 """
 #%%
 def diner_waitress():
-    menu_lis = []
+    order = []
     print("Hello, I'll be your waitress. What will you have?")
     while True:
-        nextmenu = (input("menu item: "))
-        if nextmenu == "that's all":
+        food = input("menu item: ")
+        if food == "that's all":
             break
-        menu_lis.append(nextmenu)
+	else:
+            order.append(food)
     print("You've ordered: ")
-    print(menu_lis)
+    print(order)
 #%%
